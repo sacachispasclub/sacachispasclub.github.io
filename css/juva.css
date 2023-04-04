@@ -1,0 +1,163 @@
+body{
+    background: rgb(8,28,34);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+img{
+    width: 50%;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 90px;
+    padding: 20px;
+    background-repeat : no-repeat;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(235, 218, 248);
+    text-transform: uppercase;
+}
+
+h1{
+
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    
+  }
+  
+  @-webkit-keyframes shine {
+    from {
+      -webkit-mask-position: 150%;
+    }
+    
+    to {
+      -webkit-mask-position: -50%;
+    }
+    
+  }
+	
+
+button{
+    padding: 20px 50px;
+    border-radius: 15px;
+    border: none;
+    font-size: 30px;
+   background: radial-gradient(
+      circle farthest-corner at 0% 150%,
+      rgb(255, 225, 125) 0%,
+      rgb(255, 205, 105) 12%,
+      rgb(250, 145, 55) 25%,
+      rgb(235, 65, 65) 41%,
+      transparent 95%
+    ),
+    linear-gradient(-15deg, rgb(35, 75, 215) -10%, rgb(195, 60, 190) 65%);
+  background-size: 120% 120%;
+  animation: GradientBackground 5s ease-out infinite;
+  color: white;
+}
+
+form {
+  margin: auto;
+  width: 50%;
+  border: 1px solid #ccc;
+  padding: 10px;
+ font-family: 'Raleway', sans-serif;
+ color: rgb(235, 218, 248);
+}
+
+.message-text {
+  background-color: #ffe6e6;
+  color: #cc0000;
+  padding: 10px;
+  border: 1px solid #cc0000;
+}
+
+input[type="text"], input[type="password"] {
+  width: 20%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="button"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background-color: #3e8e41;
+}
+
+button{
+
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+    text-shadow: 0 0 10px (
+        rgb(255, 225, 125) 0%,
+        rgb(255, 205, 105) 12%,
+        rgb(250, 145, 55) 25%,
+        rgb(235, 65, 65) 41%,rgb(187, 63, 63)
+        ),
+    
+  }
+  
+  @-webkit-keyframes shine {
+    from {
+      -webkit-mask-position: 150%;
+    }
+    
+    to {
+      -webkit-mask-position: -50%;
+    }
+    
+  }
+
+
+button:hover {
+    animation-delay: 3s;
+    transform: translate(0%, -2%) scale(1.3);
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 4px 16px rgb(235, 65, 65);
+    transition: all 1.2s;
+  }
+
+  button:hover:before {
+    animation-delay: 3s;
+    transform: translate(0%, -2%) scale(1.3);
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 1.2s;
+  }
+
+@media screen and (max-width:630px){
+    h1{        
+        font-size: 34px;        
+    }
+    button{
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    form {
+      margin: auto;
+      width: 50%;
+      border: 1px solid #ccc;
+      padding: 10px;
+     font-family: 'Raleway', sans-serif;
+     color: rgb(235, 218, 248);
+    }
+}

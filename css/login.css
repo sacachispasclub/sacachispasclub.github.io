@@ -1,0 +1,111 @@
+body {
+    background-image: url('https://cdn.discordapp.com/attachments/1070926860415926282/1092815723379839040/fondo.jpeg');
+    background-size: cover;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  form {
+    background-color: #1c1c1c;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  input[type="submit"] {
+    background-color: #0a790a;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    padding-top: 30px;
+  }
+  
+  .link {
+    color: #fff;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  .error-message {
+    background-color: #ff0000;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+
+    body {
+      font-size: 50px;
+    }
+  
+    h1 {
+      font-size: 6rem;
+    }
+  
+    form {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+  
+    input[type="text"],
+    input[type="password"] {
+      font-size: 20px;
+      margin-bottom: 15px;
+      padding: 5px;
+    }
+  
+    input[type="submit"] {
+      font-size: 1rem;
+      padding: 5px;
+    }
+  
+    .logo {
+      max-width: 150px;
+      padding-top: 20px;
+    }
+  
+    .error-message {
+      font-size: 1rem;
+      margin-bottom: 15px;
+      padding: 5px;
+    }
+  }
