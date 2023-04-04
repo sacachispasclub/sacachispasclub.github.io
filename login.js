@@ -1,7 +1,7 @@
 
 var users = [
-  { username: "nacho", password: "1" },
-  { username: "47661458", password: "458" },
+  { username: "prueba", password: "prueba" },
+  { username: "Nacho", password: "458" },
   { username: "igna", password: "3" }
 ];
 // Verificar si el usuario ha iniciado sesión
