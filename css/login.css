@@ -1,7 +1,8 @@
 body {
-    background-image: url('https://cdn.discordapp.com/attachments/1070926860415926282/1092815723379839040/fondo.jpeg');
+    background-image: url('');
+    background-color: #0a790a;
     background-size: cover;
-    color: #fff;
+    color: #fdfdfd;
     font-family: Arial, sans-serif;
   }
   
@@ -14,7 +15,7 @@ body {
     background-color: #1c1c1c;
     border: 1px solid #000;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
     max-width: 500px;
     margin: 0 auto;
     padding: 30px;
