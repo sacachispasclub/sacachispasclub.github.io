@@ -29,6 +29,12 @@ const usuarios = [
   }
 ];
 
+// Verificar si el usuario ha iniciado sesión
+if (!sessionStorage.getItem("loggedIn")) {
+  // Si no ha iniciado sesión, redirigir a la página de inicio de sesión
+  window.location.replace("login.html");
+}
+
 function imprimirCredencial() {
   // Llamada a la función de impresión del navegador
   window.print();
@@ -91,12 +97,6 @@ document.getElementById("foto").src = usuarioActual.foto;
 document.getElementById("socio").innerHTML = usuarioActual.socio;
 document.getElementById("tsocio").innerHTML = usuarioActual.tsocio;
 
-
-// Verificar si el usuario ha iniciado sesión
-if (!sessionStorage.getItem("loggedIn")) {
-    // Si no ha iniciado sesión, redirigir a la página de inicio de sesión
-    window.location.replace("login.html");
-  }
 function login() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
