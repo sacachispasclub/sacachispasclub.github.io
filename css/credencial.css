@@ -1,60 +1,104 @@
 
 
   body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0a790a;
+    background: linear-gradient(to bottom right, #0a790a, #000000);
+    color: #ffffff;
   }
 
   .card {
-    max-width: 500px;
+    max-width: 450px;
     margin: 20px auto;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    background-color: rgba(1, 160, 14, 0.979);
+    background-color: #1c1c1c;
     padding: 20px;
     border-radius: 3%;
+    color: rgb(255, 255, 255) !important;
+    
+  box-shadow: 0 4px 11px #427442;
+  transition: all 0.2s ease;
   }
 
   .imprimir {
     background-color: #0a790a;
     border: none;
     border-radius: 5px;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
     font-size: 1.2rem;
     padding: 10px;
     width: 100%;
+    opacity: 40%;
+  }
+
+  .imprimir:hover
+  {
+    color: #ffffff;
+    opacity: 80%;
+    scale: 20px;
+    color: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 4px 7px #307730;;
+  transition: all 0.2s ease;
   }
 
   .card img {
     display: block;
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
     margin: 0 auto;
     border-radius: 50%;
   }
 
   .card h1 {
+    text-align: center;
     font-size: 1.8rem;
     margin-top: 20px;
     margin-bottom: 10px;
+    background-color: #5a5a5a;
+    border: none;
+    border-radius: 5px
   }
 
+  .token {
+    text-shadow: 0 0 32px #ff0000;
+      color: transparent;
+  }
+
+  .token:hover {
+    text-shadow: 0 0 0px white;
+    color: rgba(255, 255, 255, 1)
+  }
+  
+
   .card p {
+    text-align: left;
+    text-shadow: 0 0 12px #000000;
     font-size: 1.2rem;
     margin-bottom: 10px;
+    background-color: #333333;
+    border: none;
+    border-radius: 5px;
   }
 
   @media (max-width: 768px) {
+
+    body {
+      padding: 20px; /* Agregar espacio entre el contenido y los bordes de la pantalla */
+      margin: 0 auto;
+      height: 874px;
+      width: 90%;
+  
+    }
     .card {
-      max-width: 90%;
+      max-width: 100%;
+      height: 600px;
     }
 
     .card h1 {
-      font-size: 1.5rem;
+      font-size: 2.5rem;
     }
 
     .card p {
-      font-size: 1rem;
+      font-size: 1.6rem;
     }
   }
