@@ -5,7 +5,7 @@ const usuarios = [
     password: "facu",
     nombre: "Facundo Miguez",
     documento: "no lo se",
-    foto: "https://assets.stickpng.com/images/585e4beacb11b227491c3399.png",
+    foto: "https://cdn.icon-icons.com/icons2/2506/PNG/512/user_icon_150670.png",
     socio: "0001",
     tsocio: "sc001f"
   },
@@ -14,7 +14,7 @@ const usuarios = [
     password: "fede",
     nombre: "Federico Chocho",
     documento: "no lo se",
-    foto: "https://assets.stickpng.com/images/585e4beacb11b227491c3399.png",
+    foto: "https://cdn.icon-icons.com/icons2/2506/PNG/512/user_icon_150670.png",
     socio: "0002",
     tsocio: "sc002f"
   },
@@ -38,7 +38,7 @@ function login() {
     // Iniciar sesión exitosamente
     sessionStorage.setItem("loggedIn", true);
     sessionStorage.setItem("usuarioActual", JSON.stringify(usuarioEncontrado));
-      window.location.replace("https://sacachispasclub.github.io");
+      window.location.replace("https://sacachispasclub.github.io/index.html");
     } else {
       document.getElementById("message").innerHTML = "Nombre de usuario o contraseña incorrectos";
     }
