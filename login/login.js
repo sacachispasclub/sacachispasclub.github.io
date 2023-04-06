@@ -38,8 +38,8 @@ function login() {
     // Iniciar sesión exitosamente
     sessionStorage.setItem("loggedIn", true);
     sessionStorage.setItem("usuarioActual", JSON.stringify(usuarioEncontrado));
-      //window.location.replace("https://sacachispasclub.github.io/index.html");
-      window.location.replace("C:/Users/Romi/Desktop/sacachispasclub.github.io/index.html");
+      window.location.replace("https://sacachispasclub.github.io/index.html");
+      //window.location.replace("C:/Users/Romi/Desktop/sacachispasclub.github.io/index.html");
     } else {
       document.getElementById("message").innerHTML = "Nombre de usuario o contraseña incorrectos";
     }
