@@ -76,9 +76,27 @@ ctx.drawImage(img, 10, 90, 100, 100); // Agrega la imagen
 // Crea un enlace de descarga para la imagen
 var link = document.createElement('a');
 link.href = canvas.toDataURL('image/png'); // Convierte el canvas a una imagen PNG
-link.download = 'CredencialSC.png';
-link.click(); // Simula un clic en el enlace para descargar la imagen
+if (navigator.share) {
+  navigator
+    .share({
+      title: "Compartir credencial",
+      text: "Esta es mi credencial",
+      url: link.href,
+    })
+    .then(() => {
+      console.log("Compartido con éxito");
+    })
+    .catch((error) => {
+      console.error("Error al compartir", error);
+    });
+} else {
+  // Si el navegador no admite el API de compartir, mostrar un mensaje de error
+  alert("Lo siento, tu navegador no admite el API de compartir");
 }
+};
+
+
+// Obtener la referencia al botón de compartir
 // Obtener el usuario actual
 const usuarioActual = JSON.parse(sessionStorage.getItem("usuarioActual"));
 
